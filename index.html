@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Belcastro — Testeur Logiciel / QA</title>
+  <meta name="description" content="Portfolio de Michael Belcastro, Testeur Logiciel Junior — Cypress, Jira, Notion. Disponible CDI, télétravail ou hybride.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <!-- Barre "app chrome" -->
+  <header class="chrome">
+    <div class="chrome__dots">
+      <span class="dot dot--red"></span>
+      <span class="dot dot--yellow"></span>
+      <span class="dot dot--green"></span>
+    </div>
+    <div class="chrome__title">qa-board · sprint-recrutement-Q3-2026</div>
+    <button class="lang-btn" id="lang-toggle" type="button" aria-label="Changer de langue">EN</button>
+  </header>
+
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <div class="profile">
+          <img src="assets/favicon.png" alt="Logo MB">
+          <div>
+            <div class="profile__name">M. BELCASTRO</div>
+            <div class="profile__role">QA Tester · Junior</div>
+          </div>
+        </div>
+        <button class="burger" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a class="nav-item" href="#ticket-hero"><span>🎯 <span data-i18n="nav_priority">Ticket prioritaire</span></span><span class="nav-item__count">1</span></a>
+        <a class="nav-item" href="#experiences"><span>🧪 <span data-i18n="nav_xp">Expériences</span></span><span class="nav-item__count">3</span></a>
+        <a class="nav-item" href="#projets"><span>🚀 <span data-i18n="nav_projects">Projets</span></span><span class="nav-item__count">3</span></a>
+        <a class="nav-item" href="#coverage"><span>🧰 <span data-i18n="nav_coverage">Stack & Outils</span></span></a>
+        <a class="nav-item" href="#contact"><span>✉️ Contact</span></a>
+      </nav>
+
+      <div class="status-card">
+        <div class="status-card__head"><span class="status-card__pulse"></span><span data-i18n="status_avail">DISPONIBLE</span></div>
+        <div class="status-card__body" data-i18n="status_mode">CDI · télétravail ou hybride</div>
+      </div>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="main">
+
+      <!-- Ticket héros -->
+      <section class="hero" id="ticket-hero">
+        <div class="hero__bar">
+          <span class="ticket-id">MB-001</span>
+          <span class="badge badge--critical">CRITICAL</span>
+          <span class="badge badge--open" data-i18n="badge_open">OUVERT</span>
+          <span class="hero__sprint">sprint: Q3-2026</span>
+        </div>
+        <div class="hero__body">
+          <div>
+            <h1 class="hero__title" data-i18n="hero_title">Votre équipe QA manque d'un testeur junior motivé</h1>
+            <div class="hero__desc">
+              <span class="hero__steps-label" data-i18n="steps_label">Étapes pour reproduire :</span>
+              <span data-i18n="hero_steps">1. Ouvrir ce portfolio&nbsp;&nbsp;2. Constater 9 mois de formation QA intensive + un parcours terrain qui a forgé la rigueur&nbsp;&nbsp;3. Résoudre le ticket en me contactant.</span>
+            </div>
+            <div class="hero__tags">
+              <span class="tag tag--purple">cypress</span>
+              <span class="tag tag--purple">jira</span>
+              <span class="tag tag--purple">notion</span>
+              <span class="tag tag--cyan">remote-friendly</span>
+              <span class="tag tag--cyan">cdi</span>
+            </div>
+            <div class="hero__actions">
+              <a class="btn-primary" href="mailto:michael.belcastro.pro@gmail.com" target="_blank" rel="noopener" data-i18n="resolve_btn">RÉSOUDRE CE TICKET →</a>
+              <span class="hero__assignee" data-i18n="assignee">assigné à : vous</span>
+            </div>
+          </div>
+          <div class="hero__logo">
+            <span class="circuit circuit--top"></span>
+            <span class="circuit-node circuit-node--top"></span>
+            <span class="circuit circuit--bottom"></span>
+            <span class="circuit-node circuit-node--bottom"></span>
+            <div class="hero__logo-hex">
+              <div class="hero__logo-perspective">
+                <div class="hero__logo-rotator" id="logo-rotator">
+                  <div class="hero__logo-face hero__logo-face--front">
+                    <img src="assets/favicon.png" alt="Logo hexagonal MB">
+                  </div>
+                  <div class="hero__logo-face hero__logo-face--back">
+                    <img src="assets/person.png" alt="Michael Belcastro">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expériences -->
+      <section id="experiences">
+        <h2 class="section-title">🧪 <span data-i18n="xp_title">EXPÉRIENCES</span></h2>
+        <div class="ticket-list">
+          <article class="ticket">
+            <span class="ticket-id">MB-002</span>
+            <div class="ticket__content">
+              <div class="ticket__title" data-i18n="xp1_title">Formation Testeur Logiciel — OpenClassrooms</div>
+              <div class="ticket__meta" data-i18n="xp1_meta">nov. 2025 → juil. 2026 · automatisation, validation fonctionnelle, Agile</div>
+            </div>
+            <span class="badge badge--progress" data-i18n="badge_progress">EN COURS</span>
+          </article>
+          <article class="ticket">
+            <span class="ticket-id">MB-003</span>
+            <div class="ticket__content">
+              <div class="ticket__title" data-i18n="xp2_title">Technicien Atelier — Décathlon</div>
+              <div class="ticket__meta" data-i18n="xp2_meta">sept. 2024 → août 2025 · diagnostic &amp; réparation cycles / trottinettes</div>
+            </div>
+            <span class="badge badge--resolved" data-i18n="badge_resolved">RÉSOLU</span>
+          </article>
+          <article class="ticket">
+            <span class="ticket-id">MB-004</span>
+            <div class="ticket__content">
+              <div class="ticket__title" data-i18n="xp3_title">Bâtiment — métiers techniques exigeants</div>
+              <div class="ticket__meta" data-i18n="xp3_meta">plusieurs années · rigueur, autonomie, précision</div>
+            </div>
+            <span class="badge badge--archived" data-i18n="badge_archived">ARCHIVÉ</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projets -->
+      <section id="projets">
+        <h2 class="section-title">🚀 <span data-i18n="proj_title">PROJETS — ÉTUDES DE CAS</span></h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project__img"><img src="assets/eco-bliss-bath.jpg" alt="Eco Bliss Bath"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <span class="ticket-id">MB-005</span>
+                <span class="badge badge--passed">PASSED ✓</span>
+              </div>
+              <div class="project__title">Eco Bliss Bath</div>
+              <div class="project__desc" data-i18n="p1_desc">Campagne Cypress complète : API REST, tests fonctionnels, anomalies XSS &amp; panier détectées et documentées.</div>
+              <a class="project__link" href="https://github.com/michaelbelcas-arch/Eco-Bliss-Bath-V2" target="_blank" rel="noopener">→ <span data-i18n="gh_link1">Voir sur GitHub</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__img"><img src="assets/kasa.png" alt="Kasa"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <span class="ticket-id">MB-006</span>
+                <span class="badge badge--passed">SHIPPED ✓</span>
+              </div>
+              <div class="project__title">Kasa</div>
+              <div class="project__desc" data-i18n="p2_desc">Application React responsive : routing, composants réutilisables. Côté dev, pour mieux comprendre ce que je teste.</div>
+              <a class="project__link" href="https://github.com/michaelbelcas-arch/Projet-8---React" target="_blank" rel="noopener">→ <span data-i18n="gh_link2">Voir sur GitHub</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__img project__img--logo"><img src="assets/tomsen.png" alt="TOMSEN"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <span class="ticket-id">MB-007</span>
+                <span class="badge badge--passed" data-i18n="p3_badge">LIVRÉ ✓</span>
+              </div>
+              <div class="project__title">TOMSEN</div>
+              <div class="project__desc" data-i18n="p3_desc">Stratégie de test d'une application bancaire : revue des exigences, stratégie, cas de test et compte rendu.</div>
+              <a class="project__link" href="assets/TOMSEN_dossier_de_test_Belcastro.zip" target="_blank" download>⬇ <span data-i18n="p3_link">Télécharger le dossier de test (.zip)</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Stack & outils -->
+      <section id="coverage">
+        <h2 class="section-title">🧰 <span data-i18n="cov_title">STACK &amp; OUTILS</span></h2>
+        <div class="stack">
+          <span class="stack-item"><span class="stack-item__check">✓</span>Cypress</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>Jira</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>Notion</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>Postman</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>Git / GitHub</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>Docker</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>JS / React</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>SQL</span>
+          <span class="stack-item"><span class="stack-item__check">✓</span>☕ <span data-i18n="coffee">Café</span></span>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="contact__content">
+          <div class="contact__title">✉️ <span data-i18n="contact_title">Ouvrir un ticket « opportunité »</span></div>
+          <div class="contact__links">michael.belcastro.pro@gmail.com · <a href="https://www.linkedin.com/in/michael-belcastro-7a9174407/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/michaelbelcas-arch" target="_blank" rel="noopener">GitHub</a> · <a href="assets/cv-michael-belcastro.pdf" target="_blank" rel="noopener" data-i18n="cv_link">Mon CV</a></div>
+        </div>
+        <a class="btn-primary" href="mailto:michael.belcastro.pro@gmail.com" target="_blank" rel="noopener" data-i18n="contact_btn">CRÉER LE TICKET</a>
+      </section>
+
+      <footer class="footer" data-i18n="footer">Conçu et testé par Michael Belcastro — 0 bug connu (pour l'instant) · © 2026</footer>
+
+    </main>
+  </div>
+
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
